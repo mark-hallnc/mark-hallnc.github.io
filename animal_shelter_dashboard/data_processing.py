@@ -2,18 +2,10 @@
 
 import pandas as pd
 from animal_shelter import AnimalShelter  # Import the AnimalShelter class for database interaction
+import time
 
 def get_data(filter_type):
-    """
-    Connects to MongoDB, retrieves data based on the specified filter type, 
-    and returns it as a DataFrame.
-
-    Parameters:
-        filter_type (str): The type of rescue filter to apply.
-
-    Returns:
-        pd.DataFrame: A DataFrame containing the filtered data.
-    """
+   
     # Database connection credentials
     username = "newUsername"
     password = "newPassword123"
@@ -41,8 +33,17 @@ def get_data(filter_type):
     elif filter_type == 'Reset':
         query = {}  # No filter applied, retrieves all records
 
+    # Record the start time before executing the query
+    # For verification of query performance
+    start_time = time.time()
+
     # Retrieve data from the MongoDB collection based on the query
     data = db.read(query)
+
+    # Calculate and print the query execution time
+    # For verification of query performance
+    execution_time = time.time() - start_time
+    print(f"Query executed in: {execution_time:.4f} seconds")
 
     # Convert the retrieved data (list of dictionaries) to a pandas DataFrame
     df = pd.DataFrame.from_records(data)

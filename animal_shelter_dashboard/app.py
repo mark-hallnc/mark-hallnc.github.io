@@ -1,7 +1,7 @@
 # app.py - Initialize the Dash app and set up the server. This file is the entry point for the application.
 
 from dash import Dash
-import dash_html_components as html
+from dash import html
 from layouts import app_layout
 from callbacks import register_callbacks
 

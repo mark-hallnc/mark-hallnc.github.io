@@ -38,7 +38,7 @@ def register_callbacks(app):
         if viewData is None or len(viewData) == 0:
             return [dcc.Graph(figure=px.pie(names=[], title='Preferred Animals'))]
 
-        # Create a DataFrame from the data table's virtual data
+        # Create a DataFrame from the data table's data
         dff = pd.DataFrame.from_dict(viewData)
         
         # If the DataFrame is empty, show an empty pie chart
@@ -75,7 +75,7 @@ def register_callbacks(app):
         # Create a DataFrame from the data table's virtual data
         dff = pd.DataFrame.from_dict(viewData)
         
-        # Get the index of the selected row (only single row selection is allowed)
+        # Get the index of the selected row
         row = selected_rows[0]
 
         # Ensure the required columns for map display exist in the DataFrame
