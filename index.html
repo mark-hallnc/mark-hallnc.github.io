@@ -10,8 +10,10 @@
     main { padding: 2em; max-width: 800px; margin: auto; }
     h1, h2, h3 { color: #333; text-align: center; }
     p { font-size: 1.1em; line-height: 1.6; color: #555; text-align: center; }
-    .btn { display: inline-block; margin-top: 1em; padding: 0.7em 1.5em; color: white; background-color: #007acc; text-decoration: none; border-radius: 5px; }
+    .btn { display: inline-block; margin-top: 1em; padding: 0.7em 1.5em; color: white; background-color: #007acc; text-decoration: none; border-radius: 5px; text-align: center; }
+    .btn:hover { background-color: #005f99; }
     .video-link { display: block; margin-top: 1.5em; padding: 0.7em 1.5em; color: white; background-color: #28a745; text-decoration: none; border-radius: 5px; text-align: center; }
+    .video-link:hover { background-color: #1e7b34; }
     .section { margin-bottom: 2em; }
   </style>
 </head>
@@ -29,11 +31,31 @@
     <section class="section">
       <h2>Projects</h2>
       <p>Take a look at some of the projects I’ve been working on in my repositories.</p>
-      <h3>CS499 Capstone Project (In Progress)</h3>
-	<!--      
-	<a href="https://github.com/mark-hallnc" class="btn">View My GitHub Profile</a>
-	-->
-      <a href="https://www.youtube.com/watch?v=73tWQyJxDRA" target="_blank" class="video-link">Watch Code Review Video</a>
+
+      <h3>Enhancements</h3>
+      <ul style="list-style: none; padding: 0; text-align: center;">
+        <li>
+          <a href="./enhancement-1/index.html" class="btn">Enhancement 1: Software Design</a>
+        </li>
+        <li>
+          <a href="./enhancement-2/index.html" class="btn">Enhancement 2: Algorithms & Data Structures</a>
+        </li>
+        <li>
+          <a href="./enhancement-3/index.html" class="btn">Enhancement 3: Databases</a>
+        </li>
+      </ul>
+
+      <h3>Original Files</h3>
+      <div style="text-align: center;">
+  <a href="./original-files/" class="btn">View Original Project Files</a>
+</div>
+
+    <section class="section">
+      <h2>Code Review</h2>
+      <div style="text-align: center;">
+  <a href="https://www.youtube.com/watch?v=73tWQyJxDRA" target="_blank" class="video-link" style="display: inline-block; width: auto;">Watch Code Review Video</a>
+</div>
+
     </section>
   </main>
 </body>
