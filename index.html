@@ -8,13 +8,24 @@
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; }
     header { background-color: #333; color: white; padding: 1.5em; text-align: center; }
     main { padding: 2em; max-width: 800px; margin: auto; }
-    h1, h2, h3 { color: #333; text-align: center; }
+    h1, h2, h3, h4 { color: #333; text-align: center; }
     p { font-size: 1.1em; line-height: 1.6; color: #555; text-align: center; }
+    img { max-width: 100%; height: auto; margin: 10px auto; display: block; }
     .btn { display: inline-block; margin-top: 1em; padding: 0.7em 1.5em; color: white; background-color: #007acc; text-decoration: none; border-radius: 5px; text-align: center; }
     .btn:hover { background-color: #005f99; }
     .video-link { display: block; margin-top: 1.5em; padding: 0.7em 1.5em; color: white; background-color: #28a745; text-decoration: none; border-radius: 5px; text-align: center; }
     .video-link:hover { background-color: #1e7b34; }
     .section { margin-bottom: 2em; }
+    .project { text-align: center; margin-bottom: 2em; }
+    .project-image {width: 200px; height: auto; display: block;margin: 10px auto;}
+    .projects-container {display: flex; justify-content: center; gap: 20px;  flex-wrap: wrap; margin-top: 20px;}
+    .project-card {background-color: white; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center; width: 250px; box-sizing: border-box;}
+    .project-card h3 {margin-bottom: 10px; color: #007acc;}
+    .project-card p {margin-bottom: 15px; font-size: 0.9em; color: #555;}
+    .enhancements-container {display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;  margin-top: 20px;}
+    .enhancement-card { background-color: white; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center; width: 250px; box-sizing: border-box; }
+    .enhancement-card h3 { margin-bottom: 10px; color: #007acc;}
+    .enhancement-card p {margin-bottom: 15px;font-size: 0.9em;color: #555;}
   </style>
 </head>
 <body>
@@ -32,31 +43,96 @@
       <h2>Projects</h2>
       <p>Take a look at some of the projects I’ve been working on in my repositories.</p>
 
-      <h3>Enhancements</h3>
-      <ul style="list-style: none; padding: 0; text-align: center;">
-        <li>
-          <a href="./enhancement-1/index.html" class="btn">Enhancement 1: Software Design</a>
-        </li>
-        <li>
-          <a href="./enhancement-2/index.html" class="btn">Enhancement 2: Algorithms & Data Structures</a>
-        </li>
-        <li>
-          <a href="./enhancement-3/index.html" class="btn">Enhancement 3: Databases</a>
-        </li>
-      </ul>
+      <section class="section">
+  
+  <h3>CS-499 Capstone Project</h3>
+  <div class="enhancements-container">
+    <div class="enhancement-card">
+      <h3>Enhancement 1</h3>
+      <p>Software Design</p>
+      <a href="./enhancement-1/index.html" class="btn">View Enhancement</a>
+    </div>
+    <div class="enhancement-card">
+      <h3>Enhancement 2</h3>
+      <p>Algorithms & Data Structures</p>
+      <a href="./enhancement-2/index.html" class="btn">View Enhancement</a>
+    </div>
+    <div class="enhancement-card">
+      <h3>Enhancement 3</h3>
+      <p>Databases</p>
+      <a href="./enhancement-3/index.html" class="btn">View Enhancement</a>
+    </div>
+  </div>
+</section>
 
       <h3>Original Files</h3>
       <div style="text-align: center;">
-  <a href="./original-files/" class="btn">View Original Project Files</a>
-</div>
+        <a href="./original-files/" class="btn">View Original Project Files</a>
+      </div>
+    </section>
 
     <section class="section">
-      <h2>Code Review</h2>
+      <h3>Code Review (prior to enhancements)</h3>
       <div style="text-align: center;">
-  <a href="https://www.youtube.com/watch?v=73tWQyJxDRA" target="_blank" class="video-link" style="display: inline-block; width: auto;">Watch Code Review Video</a>
-</div>
-
+        <a href="https://www.youtube.com/watch?v=73tWQyJxDRA" target="_blank" class="video-link" style="display: inline-block; width: auto;">Watch Code Review Video</a>
+      </div>
     </section>
+
+<section class="section">
+  <h2>Additional Projects</h2>
+  <div class="projects-container">
+    <div class="project-card">
+      <h3>App Design</h3>
+      <img src="assets/images/app-design.png" alt="App Design" class="project-image">
+      <p>This repository contains a couple of wireframes I worked on.</p>
+      <a href="https://github.com/mark-hallnc/App-Design" target="_blank" class="btn">View Repository</a>
+    </div>
+
+    <div class="project-card">
+      <h3>C++ Date & Time Manipulations</h3>
+      <img src="assets/images/cplusplus-logo.jpg" alt="C++ Logo" class="project-image">
+      <p>A small project in C++ for manipulating time. I earned a C++ certification.</p>
+      <a href="https://github.com/mark-hallnc/CPlusPlus-Date-Time-Manipulations" target="_blank" class="btn">View Repository</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Java Blackjack Game</h3>
+      <img src="assets/images/java-logo.jpg" alt="Java Logo" class="project-image">
+      <p>An early project from my Associate’s program where I also earned a Java certification.</p>
+      <a href="https://github.com/mark-hallnc/Java-Blackjack-Game" target="_blank" class="btn">View Repository</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Python: Create & Manage DB with SQL</h3>
+      <img src="assets/images/python-logo.png" alt="Python Logo" class="project-image">
+      <p>The capstone project for my Associate’s degree, demonstrating database skills with a sales tracking program.</p>
+      <a href="https://github.com/mark-hallnc/Python-Create-Manage-DB-with-SQL" target="_blank" class="btn">View Repository</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Embedded Systems Engineering</h3>
+      <img src="assets/images/c-logo.png" alt="C Logo" class="project-image">
+      <p>A project in C for working with embedded systems.</p>
+      <a href="https://github.com/mark-hallnc/Embedded-Systems-Engineering" target="_blank" class="btn">View Repository</a>
+    </div>
+    
+    <div class="project-card">
+      <h3>CS405 Secure Coding</h3>
+      <img src="assets/images/cplusplus-logo.jpg" alt="C++ Logo" class="project-image">
+      <p>Worked with encryption, secure coding, static code analysis, buffer overflows, and more.</p>
+      <a href="https://github.com/mark-hallnc/CS405-Secure-Coding" target="_blank" class="btn">View Repository</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Software Test Automation & QA</h3>
+      <img src="assets/images/java-logo.jpg" alt="Java Logo" class="project-image">
+      <p>
+        Focused on rigorous testing to ensure functionality and security through unit tests, integration tests, and end-to-end testing. Employed secure coding principles, input validation, and conducted code reviews and audits.
+      </p>
+      <a href="https://github.com/mark-hallnc/Software-Test-Automation-QA" target="_blank" class="btn">View Repository</a>
+    </div>
+  </div>
+</section>
   </main>
 </body>
 </html>
